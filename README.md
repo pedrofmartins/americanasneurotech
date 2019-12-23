@@ -7,6 +7,7 @@ To be able to run this project you will need:
 2 - Java version 1.8
 3 - Cucumber dependencies (it's at pom file)
 4 - Íf necessary, update the libraries needed to run the tests.
+5 - Chromedriver must be able to work with your chrome(this one is v79)
 
 ## Runing the tests
 
