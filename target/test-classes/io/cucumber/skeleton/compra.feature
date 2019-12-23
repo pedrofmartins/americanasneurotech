@@ -9,13 +9,13 @@ Feature: Purchase
   
   Scenario Outline: Select one product to buy
     Given I have a list of products
-    When I click on the chosen product
-    And I click to buy now with one-click
-    Then user enters "<name>" and "<value>" and "<email>"
+    When I search one "<product>"
+    And I click to search
+    Then user enters "<cep>"
     And I click to submit
-    Then Close the Browser
+    Then Check the basket
     
 Examples: 
 
-|name  |value        |email             |
-|falcao|5581992151293|falcao@example.com|
+|product|cep     |
+|    ps4|54430250|
